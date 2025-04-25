@@ -1,4 +1,4 @@
-![Alicio_en_Mirlando](media/Alicio_en_Mirlando_128.png)
+![Alicio_en_Mirlando](source/icon.png)
 # AliceTracker
 
 Trace your dives down the web's rabbit holes
