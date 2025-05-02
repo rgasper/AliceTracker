@@ -6,5 +6,11 @@
   "action": {
     "default_popup": "src/hello.html",
     "default_icon": "src/media/icon128.png"
+  },
+  "icons": {
+    "16": "src/media/icon16.png",
+    "32": "src/media/icon32.png",
+    "48": "src/media/icon48.png",
+    "128": "src/media/icon128.png"
   }
 }
