@@ -1,0 +1,10 @@
+{
+  "name": "AliceTracker",
+  "description": "Trace your dives through the web's rabbit holes",
+  "version": "0.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "src/hello.html",
+    "default_icon": "src/media/icon128.png"
+  }
+}
