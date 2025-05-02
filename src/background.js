@@ -17,4 +17,22 @@ chrome.action.onClicked.addListener(async (tab) => {
     text: nextState,
   });
   await chrome.action.setBadgeBackgroundColor({ color: color });
+  if (nextState === "ON") {
+    msg = `starting focus mode on tab ${tab.id}`
+    console.log(msg)
+    // Insert the CSS file when the user turns the extension on
+    await chrome.scripting.insertCSS({
+      files: ["focus.css"],
+      target: { tabId: tab.id },
+    });
+  }
+  // else (nextState === "OFF") {
+  //   msg = `ending focus mode on tab ${tab.id}`
+  //   console.log()
+  //   // Remove the CSS file when the user turns the extension off
+  //   await chrome.scripting.removeCSS({
+  //     files: ["focus.css"],
+  //     target: { tabId: tab.id },
+  //   });
+  // };
 });
