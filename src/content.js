@@ -1,7 +1,8 @@
-const article = document.querySelector("article");
+const article = document.querySelector("body");
 
 // `document.querySelector` may return null if the selector doesn't match anything.
 if (article) {
+  console.log('found article')
   const text = article.textContent;
   const wordMatchRegExp = /[^\s]+/g; // Regular expression
   const words = text.matchAll(wordMatchRegExp);
@@ -19,4 +20,6 @@ if (article) {
   const date = article.querySelector("time")?.parentNode;
 
   (date ?? heading).insertAdjacentElement("afterend", badge);
+} else {
+  console.log('did not find article')
 }
